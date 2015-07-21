@@ -7,18 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header>
+<header class="group">
 	<h1> Jersey Hotels</h1>
-	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Log in</a></li>
-	</ul>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Log in</a></li>
+		</ul>
+	</nav>
 </header>
-<div>
+
+<main class="content">
+	
 	<%= yield %>
 
-</div>
+</main>
 
 <footer>
 	<p> @GoTeam2015</p>
