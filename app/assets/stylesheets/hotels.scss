@@ -13,6 +13,7 @@
 header {
 	padding: 30px 50px;
 	background-color: #eee;
+	border-bottom: 1px solid #000;
 
 	nav {
 		float: right;
@@ -73,4 +74,5 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	border-top: 1px solid #000;
 }
