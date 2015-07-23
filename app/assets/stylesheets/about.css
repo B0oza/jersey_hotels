@@ -1,0 +1,21 @@
+.about {
+	font-family: helvetica;
+	font-size: 50px;
+	text-align: center;
+	color: #fff;
+}
+
+.about-content {
+	text-align: center;
+	color: #fff;
+}
+
+
+.about-background {
+	background-image: url(http://www.jersey.com/PublishingImages/Responsive/Plemont-Header.jpg);
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	}
