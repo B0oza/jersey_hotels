@@ -11,9 +11,9 @@
 	<h1> Jersey Hotels</h1>
 	<nav>
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Log in</a></li>
+			<li><%= link_to 'Home', hotels_path %></li>
+			<li><%= link_to 'About', about_path %></li>
+			<li><%= link_to 'Login', new_user_session_path %></li>
 		</ul>
 	</nav>
 </header>

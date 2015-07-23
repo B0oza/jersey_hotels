@@ -1,0 +1,41 @@
+[33mcommit 34f6bd417918adce76fdc9368806170a4174b818[m
+Author: Alexandru Morti <morti_alexandru@yahoo.com>
+Date:   Wed Jul 22 13:10:45 2015 +0100
+
+    added border-top/bottom to header and footer
+
+[33mcommit 50a5d925b3c68ecd3f468d1c75af8fc5ee5c9563[m
+Author: Alexandru Morti <morti_alexandru@yahoo.com>
+Date:   Wed Jul 22 11:27:58 2015 +0100
+
+    added shadow to H1 and styled Home, about, log in
+
+[33mcommit 31ec3434e232862e7a0274bb48949acc20675065[m
+Author: Alexandru Morti <morti_alexandru@yahoo.com>
+Date:   Wed Jul 22 09:00:41 2015 +0100
+
+    changed Copyright
+
+[33mcommit 161a41de3b6e00e35934d794e15af09c38576f70[m
+Author: James Beuzeval <james.beuzeval@gmail.com>
+Date:   Tue Jul 21 19:57:40 2015 +0100
+
+    Basic template styling
+
+[33mcommit 1b040f11b826ad42258e6e2c9e2e3852b1a0a053[m
+Author: James Beuzeval <james.beuzeval@gmail.com>
+Date:   Tue Jul 21 19:38:44 2015 +0100
+
+    added nav and footer to app layout
+
+[33mcommit 4965e4f91ccdd982ae308055666854811ed9bce8[m
+Author: James Beuzeval <james.beuzeval@gmail.com>
+Date:   Tue Jul 21 19:27:56 2015 +0100
+
+    config routes.rb
+
+[33mcommit 23c6d810c8cd9ca46f48603bfbf9f83e5e60c2ba[m
+Author: James Beuzeval <james.beuzeval@gmail.com>
+Date:   Tue Jul 21 19:21:58 2015 +0100
+
+    Project created

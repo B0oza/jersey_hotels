@@ -21,6 +21,10 @@ class HotelsController < ApplicationController
   def edit
   end
 
+  def about
+      
+  end
+
   # POST /hotels
   # POST /hotels.json
   def create
@@ -71,4 +75,6 @@ class HotelsController < ApplicationController
     def hotel_params
       params.require(:hotel).permit(:name, :description, :location, :stars, :website_url, :booking_url, :facilites, :img_url)
     end
+
+
 end
