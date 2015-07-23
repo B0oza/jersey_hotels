@@ -64,15 +64,19 @@ header {
 }
 
 .content {
-	padding: 50px;
+	padding: 50px 50px 150px;
 	margin: 0 auto;
 }
 
 footer {
 	padding: 30px 50px;
 	background-color: #eee;
-	position: absolute;
+
 	bottom: 0;
 	width: 100%;
 	border-top: 1px solid #000;
+}
+
+footer {
+	position: fixed;
 }
