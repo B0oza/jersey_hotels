@@ -11,9 +11,12 @@
 	<h1> Jersey Hotels</h1>
 	<nav>
 		<ul>
-			<li><%= link_to 'Home', hotels_path %></li>
-			<li><%= link_to 'About', about_path %></li>
-			<li><%= link_to 'New Hotel', new_hotel_path %></li>
+			<li class="button"><%= link_to 'Home', hotels_path %></li>
+			<li class="button"><%= link_to 'About', about_path %></li>
+			<li class="button"><%= link_to 'New Hotel', new_hotel_path %></li>
+			<% if user_signed_in? %>
+          <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'button' %>
+          <% end %>
 		</ul>
 	</nav>
 </header>
