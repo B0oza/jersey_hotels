@@ -1,38 +1,44 @@
+<body>
+
 <p id="notice"><%= notice %></p>
 
 <p class="show-img">
   <img src= <%= @hotel.img_url %> class="show-img-size">
 </p>
 
+<div class="show-content">
 
-<div class="show-name">
-  <%= @hotel.name %>
-   
-   <span class="show-stars">
-     <%= score_into_stars(@hotel.stars) %>
-   </span>
+  <div class="show-content-text">
+  
+    <div class="show-name">
+      <%= @hotel.name %>
+       
+       <span class="show-stars">
+         <%= score_into_stars(@hotel.stars) %>
+       </span>
+    </div>
+
+
+
+
+    <div class="show-description">
+      <%= @hotel.description %>
+    </div>
+
+
+
+    <p class="show-facilites">
+      <strong>Facilites:</strong>
+      <%= @hotel.facilites %>
+    </p>
+
+
+    <p class="show-location">
+      <strong>Location:</strong>
+      <%= @hotel.location %>
+    </p>
+  </div>
 </div>
-
-
-
-
-<div class="show-description">
-  <%= @hotel.description %>
-</div>
-
-
-
-<p class="show-facilites">
-  <strong>Facilites:</strong>
-  <%= @hotel.facilites %>
-</p>
-
-
-<p class="show-location">
-  <strong>Location:</strong>
-  <%= @hotel.location %>
-</p>
-
 
 <div class="show-button">
   <div class="show-url view">
@@ -48,7 +54,8 @@
     <%= link_to image_tag('http://icons.iconarchive.com/icons/rafiqul-hassan/blogger/128/Arrow-Back-icon.png'), hotels_path, :class => 'back-button' %>
   </div>
 
-<div class="show-edit">
-<%= link_to 'Edit', edit_hotel_path(@hotel) %>
+<div class="show-edit-button">
+<%= link_to 'Edit', edit_hotel_path(@hotel), :class => 'show-edit' %>
  </div>
 
+</body>

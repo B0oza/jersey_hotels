@@ -1,8 +1,14 @@
+body {
+	background: #E7E3E3;
+}
+
 .show-img {
 	float: left;
 }
+
 .show-img-size {
 	width: 300px;
+	border-radius: 20px;
 }
 
 .show-name {
@@ -22,11 +28,12 @@
 }
 
 .show-facilites {
-	
+	font: Helvetica, Verdana, sans-serif;
+	padding-bottom: 10px; 
 }
 
 .show-location {
-	
+	font: Helvetica, Verdana, sans-serif;
 }
 
 .show-url {
@@ -62,13 +69,44 @@
 }
 
 .show-back-button {
-	max-height: 10%;
-	max-width: 10%;
+	margin-bottom: 10px;
 	float: left;
-	margin-left: 10px;
+	img {
+		width: 33px;
+	}
+}
+
+
+
+.show-edit-button {
+	margin-left: 250px;
+	margin-top: 5px;
+	width: 30px;
+	margin-bottom: 40px;
 }
 
 .show-edit {
-	
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #eee;
+	border-radius: 3px;
+	border: 2px solid #8d8d8d;
+	color: black;
+	width: 50px;
+	display: block;
+	height: 20px;
+	font-size: 15px;
+	text-align: center;
+	font: Helvetica, Verdana, sans-serif;
+	}
+
+.show-content {
+	margin-left: 350px;
+	background: #eee;
+	border-radius: 10px;
+	width: 920px;
 }
 
+.show-content-text {
+	padding: 5px 5px 5px 5px;
+}
