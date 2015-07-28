@@ -1,0 +1,15 @@
+.listing {
+	text-align: center;
+}
+
+.show-img-size {
+	border-radius: 20px;
+}
+
+
+
+.hotel-name {
+	color: red;
+	text-align: center;
+	margin-left: 120px;
+}
