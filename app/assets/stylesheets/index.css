@@ -1,15 +1,29 @@
+
+
+
 .listing {
-	text-align: center;
+	
 }
 
 .show-img-size {
 	border-radius: 20px;
+	margin-top: 50px;
 }
 
 
 
 .hotel-name {
-	color: red;
-	text-align: center;
-	margin-left: 120px;
+	margin-left: 40px;
+
+}
+
+.show-stars {
+	margin-left: 20px;
+}
+.hotels-table {
+	margin: 0 auto;
+}
+
+.hotel-name:hover {
+	color: #aaa;
 }
