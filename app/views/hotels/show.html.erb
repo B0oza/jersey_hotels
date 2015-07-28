@@ -9,14 +9,7 @@
   <%= @hotel.name %>
    
    <span class="show-stars">
-     <% ranking = @hotel.stars %> 
-        <%= case ranking 
-        when 1 then  "*"
-        when 2 then  "**"
-        when 3 then  "***"
-        when 4 then  "****"
-        when 5 then  "*****"
-        end %>
+     <%= score_into_stars(@hotel.stars) %>
    </span>
 </div>
 
@@ -26,6 +19,7 @@
 <div class="show-description">
   <%= @hotel.description %>
 </div>
+
 
 
 <p class="show-facilites">
@@ -50,12 +44,11 @@
   </div>
 </div>
 
-  <div class="show-button">
-    <%= link_to image_tag('http://www.wpclipart.com/signs_symbol/arrows/button_arrows/play_buttons/.cache/back_button_gray.png'), hotels_path, :class => 'back-button' %>
+  <div class="show-back-button">
+    <%= link_to image_tag('http://icons.iconarchive.com/icons/rafiqul-hassan/blogger/128/Arrow-Back-icon.png'), hotels_path, :class => 'back-button' %>
   </div>
 
-
-<div class="show-links">
+<div class="show-edit">
 <%= link_to 'Edit', edit_hotel_path(@hotel) %>
  </div>
 
