@@ -1,0 +1,78 @@
+.show-img {
+	float: left;
+}
+.show-img-size {
+	width: 300px;
+}
+
+.show-name {
+ font-size: 40px;
+ margin: 0 0 10px;
+}
+
+.star-rating {
+
+}
+.show-stars {
+	font-size: 30px;
+}
+
+.show-description {
+ margin-bottom: 10px;
+}
+
+.show-location {
+	
+}
+
+
+
+.show-web-url {
+	
+}
+
+.show-url {
+	width: 200px;
+	
+	margin: 0 auto;
+}
+.show-url a {
+	display: block;
+	height: 50px;
+	width: 200px;
+	color: black;
+	font: 17px/50px Helvetica, Verdana, sans-serif;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	background: #eee;
+	border-radius: 45px;
+	border: 3px solid #8d8d8d;
+}
+.view {
+	float: right;
+	margin-right: 250px;
+}
+.book {
+	float: left;
+	margin-left: 200px;
+	margin-bottom: 200px;
+}
+.show-button {
+
+}
+.show-facilites {
+	
+}
+.show-links {
+	
+}
+.show-button {
+
+}
+.back-button {
+	background-image: url(http://www.wpclipart.com/signs_symbol/arrows/button_arrows/play_buttons/.cache/back_button_gray.png);
+	background-repeat: no-repeat;
+	height: 10px;
+	width: 10px;
+}
