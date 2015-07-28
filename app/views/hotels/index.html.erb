@@ -1,33 +1,34 @@
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
 
-<h1>Listing Hotels</h1>
+  <h1 class="listing">Listing Hotels</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Location</th>
-      <th>Stars</th>
-      <th>Website url</th>
-      <th>Booking url</th>
-      <th>Facilites</th>
-      <th>Img url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <table align="center">
+
 
   <tbody>
     <% @hotels.each do |hotel| %>
+
+      <div> 
       <tr>
-        <td><%= hotel.name %></td>
-        <td><%= hotel.description %></td>
-        <td><%= hotel.location %></td>
-        <td><%= hotel.stars %></td>
-        <td><%= hotel.website_url %></td>
-        <td><%= hotel.booking_url %></td>
-        <td><%= hotel.facilites %></td>
-        <td><%= hotel.img_url %></td>  
+         <td><img src= <%= hotel.img_url %> class="show-img-size">
+         </td> 
+
+          <td>
+        <div class="hotel-name">
+         <%= hotel.name %>
+        </div>
+        </td>
+       
+        <td><% ranking = hotel.stars %> 
+        <%= case ranking 
+        when 1 then  "*"
+        when 2 then  "**"
+        when 3 then  "***"
+        when 4 then  "****"
+        when 5 then  "*****"
+        end %></td>
+        
+      
       </tr>
 
        <td><%= link_to 'Show', hotel %></td>
@@ -35,7 +36,7 @@
        
     <% end %>
   </tbody>
-</table>
+  </table>
 
 
 
