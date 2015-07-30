@@ -1,0 +1,41 @@
+
+.login, .signup, .forgot {
+	height: 100%;
+    width:  500px;
+    position: fixed;
+    top: 40%;
+    left: 33%;
+    bottom: 40%;
+    margin-top: -100px;
+    margin-bottom: 10px;
+
+   
+}
+h2 {
+	padding-bottom: 15px;
+	padding-top: 15px
+}
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 88%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  display: inline;
+  
+}
+
+input {
+  height: 30px;
+}
+
+a {
+	text-decoration: none;
+	float: left;
+	list-style: none;
+	color: 	#5C5C33
+}
+div.field{
+	display: inline;
+}
