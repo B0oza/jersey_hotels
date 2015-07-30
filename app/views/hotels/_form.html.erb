@@ -10,39 +10,42 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name, 'Hotel Name' %> <br>
-    <%= f.text_field :name, placeholder: "Name" %>
+<h1>New Hotel</h1> <br>
+<div class="new_hotel_form">
+    <div class="field">
+      <%= f.label :name, 'Hotel Name' %> <br>
+      <%= f.text_field :name, placeholder: "Name" %>
+    </div><br>
+    <div class="field">
+      <%= f.label :description %><br>
+      <%= f.text_field :description, placeholder: 'Add some brief information here about the hotel' %>
+    </div><br>
+    <div class="field">
+      <%= f.label :location, 'Address' %><br>
+      <%= f.text_field :location, placeholder: 'Where the hotel located?' %>
+    </div><br>
+    <div class="field">
+      <%= f.label :stars %><br>
+      <%= f.number_field :stars, max: 5%>
+    </div><br>
+    <div class="field">
+      <%= f.label :website_url  %><br>
+      <%= f.url_field :website_url, placeholder: 'e.g. http://www.longuevillemanor.com'%> 
+    </div><br>
+    <div class="field">
+      <%= f.label :booking_url, 'Link for affiliate booking' %><br>
+      <%= f.url_field :booking_url, placeholder: 'e.g. http://www.longuevillemanor.com/ref=jerseyhotels'%> 
+    </div><br>
+    <div class="field">
+      <%= f.label :facilites %><br>
+      <%= f.text_field :facilites, placeholder: 'Enter the pertinent facilities for the establishment' %><br>
+    </div> 
+    <div class="field">
+      <%= f.label :img_url, 'Link a webhosted image' %><br>
+      <%= f.url_field :img_url %>
+    </div>    
+      <%= f.submit %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description, placeholder: 'Add some brief information here about the hotel' %>
-  </div>
-  <div class="field">
-    <%= f.label :location, 'Address' %><br>
-    <%= f.text_field :location, placeholder: 'Where the hotel located?' %>
-  </div>
-  <div class="field">
-    <%= f.label :stars %><br>
-    <%= f.number_field :stars, max: 5%>
-  </div>
-  <div class="field">
-    <%= f.label :website_url  %><br>
-    <%= f.url_field :website_url, placeholder: 'e.g. http://www.longuevillemanor.com'%> 
-  </div>
-  <div class="field">
-    <%= f.label :booking_url, 'Link for affiliate booking' %><br>
-    <%= f.url_field :booking_url, placeholder: 'e.g. http://www.longuevillemanor.com/ref=jerseyhotels'%> 
-  </div>
-  <div class="field">
-    <%= f.label :facilites %><br>
-    <%= f.text_field :facilites, placeholder: 'Enter the pertinent facilities for the establishment' %><br>
-  </div> 
-  <div class="field">
-    <%= f.label :img_url, 'Link a webhosted image' %><br>
-    <%= f.url_field :img_url %>
-  </div>    
-    <%= f.submit %>
-  </div>
+  <%= link_to 'Back', hotels_path %>
 <% end %>
