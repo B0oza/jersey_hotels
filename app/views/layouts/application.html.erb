@@ -2,13 +2,16 @@
 <html>
 <head>
   <title>JerseyHotels</title>
+  </title>
+
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <header class="group">
-	<h1> Jersey Hotels</h1>
+	<h1><%= link_to 'JerseyHotels', hotels_path, class: "listing"%></h1>
 	<nav>
 		<ul>
 			<li class="button"><%= link_to 'Home', hotels_path %></li>

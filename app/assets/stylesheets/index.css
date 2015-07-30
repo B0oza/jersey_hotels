@@ -2,8 +2,14 @@
 
 
 .listing {
-	font-family: serif;
+font-weight: 500;
+margin-bottom: 20px;
+float: left;
+text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
+
+
+
 
 .show-img-size {
 	border-radius: 20px;
@@ -15,6 +21,7 @@
 
 .show-stars {
 	margin-left: 20px;
+	color: #FFFF99;
 }
 .hotels-table {
 	margin: 0 auto;
@@ -35,6 +42,9 @@
   transition-property: transform;
 	border-color: green;
 	padding: 5px;
+	 -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
 
 }
 
