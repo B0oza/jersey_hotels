@@ -1,44 +1,44 @@
+<body>
+
 <p id="notice"><%= notice %></p>
 
 <p class="show-img">
   <img src= <%= @hotel.img_url %> class="show-img-size">
 </p>
 
+<div class="show-content">
 
-<div class="show-name">
-  <%= @hotel.name %>
-   
-   <span class="show-stars">
-     <% ranking = @hotel.stars %> 
-        <%= case ranking 
-        when 1 then  "*"
-        when 2 then  "**"
-        when 3 then  "***"
-        when 4 then  "****"
-        when 5 then  "*****"
-        end %>
-   </span>
+  <div class="show-content-text">
+  
+    <div class="show-name">
+      <%= @hotel.name %>
+       
+       <span class="show-stars">
+         <%= score_into_stars(@hotel.stars) %>
+       </span>
+    </div>
+
+
+
+
+    <div class="show-description">
+      <%= @hotel.description %>
+    </div>
+
+
+
+    <p class="show-facilites">
+      <strong>Facilites:</strong>
+      <%= @hotel.facilites %>
+    </p>
+
+
+    <p class="show-location">
+      <strong>Location:</strong>
+      <%= @hotel.location %>
+    </p>
+  </div>
 </div>
-
-
-
-
-<div class="show-description">
-  <%= @hotel.description %>
-</div>
-
-
-<p class="show-facilites">
-  <strong>Facilites:</strong>
-  <%= @hotel.facilites %>
-</p>
-
-
-<p class="show-location">
-  <strong>Location:</strong>
-  <%= @hotel.location %>
-</p>
-
 
 <div class="show-button">
   <div class="show-url view">
@@ -50,12 +50,12 @@
   </div>
 </div>
 
-  <div class="show-button">
-    <%= link_to image_tag('http://www.wpclipart.com/signs_symbol/arrows/button_arrows/play_buttons/.cache/back_button_gray.png'), hotels_path, :class => 'back-button' %>
+  <div class="show-back-button">
+    <%= link_to image_tag('http://icons.iconarchive.com/icons/rafiqul-hassan/blogger/128/Arrow-Back-icon.png'), hotels_path, :class => 'back-button' %>
   </div>
 
-
-<div class="show-links">
-<%= link_to 'Edit', edit_hotel_path(@hotel) %>
+<div class="show-edit-button">
+<%= link_to 'Edit', edit_hotel_path(@hotel), :class => 'show-edit' %>
  </div>
 
+</body>

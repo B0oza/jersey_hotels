@@ -1,4 +1,4 @@
-<%= simple_form_for(@hotel) do |f| %>
+<%= form_for(@hotel) do |f| %>
   <% if @hotel.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@hotel.errors.count, "error") %> prohibited this hotel from being saved:</h2>
@@ -12,14 +12,37 @@
   <% end %>
 
   <div class="field">
-    <%= f.input :name, label: 'Hotel Name*' %> <br>
-    <%= f.input :description, placeholder: 'Add some brief information here about the hotel' %><br>
-    <%= f.input :location, label: 'Address'  %><br>
-    <%= f.input :stars %><br>
-    <%= f.input :website_url, as: :url, placeholder: 'e.g. http://www.longuevillemanor.com'  %><br>
-    <%= f.input :booking_url, as: :url, label: 'Link for affiliate booking' %><br>
-    <%= f.input :facilites %><br>
-    <%= f.input :img_url, as: :url, label: 'Link a webhosted image' %><br>
+    <%= f.label :name, 'Hotel Name' %> <br>
+    <%= f.text_field :name, placeholder: "Name" %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description, placeholder: 'Add some brief information here about the hotel' %>
+  </div>
+  <div class="field">
+    <%= f.label :location, 'Address' %><br>
+    <%= f.text_field :location, placeholder: 'Where the hotel located?' %>
+  </div>
+  <div class="field">
+    <%= f.label :stars %><br>
+    <%= f.number_field :stars, max: 5%>
+  </div>
+  <div class="field">
+    <%= f.label :website_url  %><br>
+    <%= f.url_field :website_url, placeholder: 'e.g. http://www.longuevillemanor.com'%> 
+  </div>
+  <div class="field">
+    <%= f.label :booking_url, 'Link for affiliate booking' %><br>
+    <%= f.url_field :booking_url, placeholder: 'e.g. http://www.longuevillemanor.com/ref=jerseyhotels'%> 
+  </div>
+  <div class="field">
+    <%= f.label :facilites %><br>
+    <%= f.text_field :facilites, placeholder: 'Enter the pertinent facilities for the establishment' %><br>
+  </div> 
+  <div class="field">
+    <%= f.label :img_url, 'Link a webhosted image' %><br>
+    <%= f.url_field :img_url %>
+  </div>    
     <%= f.submit %>
-  
+  </div>
 <% end %>

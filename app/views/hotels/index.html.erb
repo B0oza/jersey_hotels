@@ -1,41 +1,38 @@
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
 
-<h1>Listing Hotels</h1>
+  <h1 class="listing">Listing Hotels</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Location</th>
-      <th>Stars</th>
-      <th>Website url</th>
-      <th>Booking url</th>
-      <th>Facilites</th>
-      <th>Img url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <table class="hotels-table">
+
 
   <tbody>
     <% @hotels.each do |hotel| %>
-      <tr>
-        <td><%= hotel.name %></td>
-        <td><%= hotel.description %></td>
-        <td><%= hotel.location %></td>
-        <td><%= hotel.stars %></td>
-        <td><%= hotel.website_url %></td>
-        <td><%= hotel.booking_url %></td>
-        <td><%= hotel.facilites %></td>
-        <td><%= hotel.img_url %></td>  
-      </tr>
 
-       <td><%= link_to 'Show', hotel %></td>
-       <td><%= link_to 'Edit', edit_hotel_path(hotel) %></td>
+      
+      <tr>
+         <td>
+          <img src= <%= hotel.img_url %> class="show-img-size">
+         </td> 
+
+          <td>
+            <div class="hotel-name">
+              <%= link_to hotel.name, hotel_path(hotel), class: "hotel-name"  %>
+
+            </div>
+        </td>
+       
+        <td> 
+          <span class="show-stars">
+             <%= score_into_stars(hotel.stars) %>
+          </span> 
+        </td>
+        
+      
+      </tr>
        
     <% end %>
   </tbody>
-</table>
+  </table>
 
 
 

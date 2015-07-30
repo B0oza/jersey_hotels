@@ -1,0 +1,112 @@
+body {
+	background: #E7E3E3;
+}
+
+.show-img {
+	float: left;
+}
+
+.show-img-size {
+	width: 300px;
+	border-radius: 20px;
+}
+
+.show-name {
+ font-size: 40px;
+ margin: 0 0 10px;
+}
+
+.show-stars {
+	font-size: 30px;
+	img {
+		width: 20px;
+	}
+}
+
+.show-description {
+ margin-bottom: 10px;
+}
+
+.show-facilites {
+	font: Helvetica, Verdana, sans-serif;
+	padding-bottom: 10px; 
+}
+
+.show-location {
+	font: Helvetica, Verdana, sans-serif;
+}
+
+.show-url {
+	width: 200px;
+	
+	margin: 0 auto;
+}
+.show-url a {
+	display: block;
+	height: 50px;
+	width: 200px;
+	color: black;
+	font: 17px/50px Helvetica, Verdana, sans-serif;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	background: #eee;
+	border-radius: 45px;
+	border: 3px solid #8d8d8d;
+}
+.view {
+	float: right;
+	margin-right: 250px;
+}
+.book {
+
+	margin-left: 500px;
+}
+
+.show-button {
+	height: 50px;
+	margin-top: 50px;
+}
+
+.show-back-button {
+	margin-bottom: 10px;
+	float: left;
+	img {
+		width: 33px;
+	}
+}
+
+
+
+.show-edit-button {
+	margin-left: 250px;
+	margin-top: 5px;
+	width: 30px;
+	margin-bottom: 40px;
+}
+
+.show-edit {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #eee;
+	border-radius: 3px;
+	border: 2px solid #8d8d8d;
+	color: black;
+	width: 50px;
+	display: block;
+	height: 20px;
+	font-size: 15px;
+	text-align: center;
+	font: Helvetica, Verdana, sans-serif;
+	}
+
+.show-content {
+	margin-left: 350px;
+	background: #eee;
+	border-radius: 10px;
+	width: 920px;
+}
+
+.show-content-text {
+	padding: 5px 5px 5px 5px;
+}
